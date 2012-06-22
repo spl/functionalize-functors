@@ -1,0 +1,31 @@
+name:                   functionalize-functors
+version:                0.1
+synopsis:
+
+  A type class for functionalizing functors
+
+homepage:               http://github.com/spl/functionalize-functors
+description:
+
+  This package provides a type class (with an associated type synonym) and
+  instances for lifting functors to functions.
+
+category:               Functors
+copyright:              (c) 2012 Sean Leather
+license:                BSD3
+license-file:           LICENSE
+author:                 Sean Leather
+maintainer:             leather@cs.uu.nl
+stability:              experimental
+build-type:             Simple
+cabal-version:          >= 1.2  
+tested-with:            GHC == 7.4.2
+
+--------------------------------------------------------------------------------
+
+Library
+  hs-source-dirs:       src
+  exposed-modules:      Data.Functor.Functionalize
+  build-depends:        base >= 3.0,
+                        transformers >= 0.3 && < 0.4
+
